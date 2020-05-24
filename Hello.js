@@ -1,5 +1,6 @@
 import React from "react";
 import { createStore, applyMiddleware } from "redux";
+import { createLogger } from "redux-logger";
 
 function Hello() {
   const INC_VAL = "INC_VAL";
@@ -17,7 +18,8 @@ function Hello() {
         return state;
     }
   };
-  const store = createStore(reducer);
+  const logger = createLogger();
+  const store = createStore(reducer, applyMiddleware(logger));
   console.log("getstate", store.getState());
   const unsubscribe = store.subscribe(() =>
     console.log("listener", store.getState())
