@@ -1,29 +1,29 @@
 import React from "react";
-import counter1Action from "./counter1Action.js";
+import counter2Action from "./counter2Action.js";
 import { connect } from "react-redux";
 
-function Counter1(props) {
+function Counter2(props) {
   return (
     <div>
-      <h1>This is Counter1 value : {props.count1}</h1>
-      <button onClick={props.counter1Dispatch}>Counter1</button>
+      <h1>This is Counter2 value : {props.count2}</h1>
+      <button onClick={props.counter2Dispatch}>Counter2</button>
     </div>
   );
 }
 
 const mapStateToProps = state => {
   return {
-    count1: state.counter1.count1
+    count2: state.counter2.count2
   };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
-    counter1Dispatch: () => dispatch(counter1Action())
+    counter2Dispatch: () => dispatch(counter2Action())
   };
 };
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Counter1);
+)(Counter2);
