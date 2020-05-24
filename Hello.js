@@ -1,3 +1,7 @@
-import React from 'react';
+import React from "react";
 
-export default ({ name }) => <h1>Hello {name}!</h1>;
+function Hello() {
+  return <div>Redux</div>;
+}
+
+export default Hello;
