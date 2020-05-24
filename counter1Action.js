@@ -1,7 +1,9 @@
 import { INCREMENT_BY } from "./counter1Types.js";
 
-export const counter1Action = () => {
+const counter1Action = () => {
   return {
     type: INCREMENT_BY
   };
 };
+
+export default counter1Action;

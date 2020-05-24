@@ -4,7 +4,7 @@ import Hello from "./Hello";
 import "./style.css";
 import Counter1 from "./Counter1";
 import { Provider } from "react-redux";
-import { store } from "./store";
+import store from "./store";
 
 class App extends Component {
   render() {
