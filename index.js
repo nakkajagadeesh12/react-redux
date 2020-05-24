@@ -3,7 +3,6 @@ import { render } from "react-dom";
 import Hello from "./Hello";
 import "./style.css";
 import Counter1 from "./Counter1";
-import Counter2 from "./Counter2";
 
 class App extends Component {
   constructor() {
@@ -17,7 +16,6 @@ class App extends Component {
     return (
       <div style={{ textAlign: "center" }}>
         <Counter1 />
-        <Counter2 />
       </div>
     );
   }
