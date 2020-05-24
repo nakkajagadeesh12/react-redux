@@ -1,23 +1,26 @@
-import React, { Component } from 'react';
-import { render } from 'react-dom';
-import Hello from './Hello';
-import './style.css';
+import React, { Component } from "react";
+import { render } from "react-dom";
+import Hello from "./Hello";
+import "./style.css";
+import Counter1 from "./Counter1";
+import Counter2 from "./Counter2";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      name: 'React'
+      name: "React"
     };
   }
 
   render() {
     return (
-      <div>
-        <Hello name={this.state.name} />
+      <div style={{ textAlign: "center" }}>
+        <Counter1 />
+        <Counter2 />
       </div>
     );
   }
 }
 
-render(<App />, document.getElementById('root'));
+render(<App />, document.getElementById("root"));
